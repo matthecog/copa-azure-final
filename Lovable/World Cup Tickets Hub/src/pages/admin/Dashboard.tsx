@@ -83,7 +83,7 @@ const Dashboard: React.FC = () => {
   }, [teamsError]);
 
   const stats = statsData?.data?.stats as AdminStats | undefined;
-  const allSales = (salesData?.data?.sales || []) as SaleRow[];
+  const allSales = React.useMemo(() => (salesData?.data?.sales || []) as SaleRow[], [salesData]);
   const matches = matchesData?.data?.matches || [];
   const stadiums = stadiumsData?.data?.stadiums || [];
   const teams = teamsData?.data?.teams || [];
@@ -111,8 +111,8 @@ const Dashboard: React.FC = () => {
       }));
   }, [allSales, stats]);
 
-  const groupPhaseMatches = matches.filter((m: any) => m.stage === 'Fase de Grupos').length;
-  const classifiedTeams = teams.filter((t: any) => t.group_name).length;
+  const groupPhaseMatches = matches.filter((m) => m.stage === 'Fase de Grupos').length;
+  const classifiedTeams = teams.filter((t) => t.group_name).length;
 
   return (
     <div className="space-y-6">

@@ -3,12 +3,14 @@ import { useParams, Link } from 'react-router-dom';
 import {
   ArrowLeft, Trophy, Crown, Medal, Award, Calendar, MapPin, Users,
   Target, Sparkles, Flame, BookOpen, Goal, ChevronLeft, ChevronRight,
+  Circle, Smile,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { worldCups, getWorldCupByYear } from '@/data/world-cups';
 import { participantsByYear, finalLineupsByYear } from '@/data/world-cups-extra';
+import CupImageCard from '@/components/CupImageCard';
 
 const WorldCupDetail: React.FC = () => {
   const { year } = useParams<{ year: string }>();
@@ -457,6 +459,11 @@ const WorldCupDetail: React.FC = () => {
 
           {/* Sidebar com fatos rápidos */}
           <div className="space-y-6">
+            {/* Logo, bola oficial e mascote (cada card oculta-se sozinho se não houver imagem) */}
+            <CupImageCard year={cup.year} dir="logos" title="Logo oficial" Icon={Award} />
+            <CupImageCard year={cup.year} dir="balls" title="Bola oficial" label={cup.ball} Icon={Circle} />
+            <CupImageCard year={cup.year} dir="mascots" title="Mascote oficial" label={cup.mascot} Icon={Smile} />
+
             {/* Detalhes do torneio */}
             <Card className="rounded-2xl border-border">
               <CardContent className="p-6 space-y-4">

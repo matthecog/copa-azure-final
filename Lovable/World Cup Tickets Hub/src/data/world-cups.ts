@@ -45,6 +45,7 @@ export interface WorldCup {
 export const worldCups: WorldCup[] = [
   {
     year: 1930,
+    ball: 'T-Model',
     host: { name: 'Uruguai', iso: 'uy' },
     hostCities: ['Montevidéu'],
     dates: '13 de julho a 30 de julho de 1930',
@@ -78,6 +79,7 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 1934,
+    ball: 'Federale 102',
     host: { name: 'Itália', iso: 'it' },
     hostCities: ['Roma', 'Milão', 'Florença', 'Bolonha', 'Turim', 'Trieste', 'Nápoles', 'Gênova'],
     dates: '27 de maio a 10 de junho de 1934',
@@ -110,6 +112,7 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 1938,
+    ball: 'Allen',
     host: { name: 'França', iso: 'fr' },
     hostCities: ['Paris', 'Marselha', 'Lyon', 'Bordeaux', 'Estrasburgo', 'Toulouse', 'Antibes', 'Le Havre'],
     dates: '4 de junho a 19 de junho de 1938',
@@ -142,6 +145,7 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 1950,
+    ball: 'Superball Duplo T',
     host: { name: 'Brasil', iso: 'br' },
     hostCities: ['Rio de Janeiro', 'São Paulo', 'Belo Horizonte', 'Porto Alegre', 'Recife', 'Curitiba'],
     dates: '24 de junho a 16 de julho de 1950',
@@ -176,6 +180,7 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 1954,
+    ball: 'Swiss World Champion',
     host: { name: 'Suíça', iso: 'ch' },
     hostCities: ['Berna', 'Basileia', 'Lausanne', 'Zurique', 'Genebra', 'Lugano'],
     dates: '16 de junho a 4 de julho de 1954',
@@ -209,6 +214,7 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 1958,
+    ball: 'Top Star',
     host: { name: 'Suécia', iso: 'se' },
     hostCities: ['Estocolmo', 'Gotemburgo', 'Malmö', 'Norrköping'],
     dates: '8 de junho a 29 de junho de 1958',
@@ -242,6 +248,7 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 1962,
+    ball: 'Mr. Crack',
     host: { name: 'Chile', iso: 'cl' },
     hostCities: ['Santiago', 'Viña del Mar', 'Arica', 'Rancagua'],
     dates: '30 de maio a 17 de junho de 1962',
@@ -275,6 +282,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 1966,
+    mascot: 'World Cup Willie',
+    ball: 'Slazenger Challenge 4-Star',
     host: { name: 'Inglaterra', iso: 'gb-eng' },
     hostCities: ['Londres', 'Liverpool', 'Manchester', 'Sheffield', 'Birmingham', 'Sunderland', 'Middlesbrough'],
     dates: '11 de julho a 30 de julho de 1966',
@@ -308,6 +317,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 1970,
+    mascot: 'Juanito',
+    ball: 'Telstar',
     host: { name: 'México', iso: 'mx' },
     hostCities: ['Cidade do México', 'Guadalajara', 'León', 'Toluca', 'Puebla'],
     dates: '31 de maio a 21 de junho de 1970',
@@ -341,6 +352,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 1974,
+    mascot: 'Tip e Tap',
+    ball: 'Telstar Durlast',
     host: { name: 'Alemanha Ocidental', iso: 'de' },
     hostCities: ['Munique', 'Berlim', 'Frankfurt', 'Düsseldorf', 'Hamburgo', 'Stuttgart', 'Hanôver', 'Dortmund', 'Gelsenkirchen'],
     dates: '13 de junho a 7 de julho de 1974',
@@ -375,6 +388,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 1978,
+    mascot: 'Gauchito',
+    ball: 'Tango Durlast',
     host: { name: 'Argentina', iso: 'ar' },
     hostCities: ['Buenos Aires', 'Mar del Plata', 'Mendoza', 'Córdoba', 'Rosario'],
     dates: '1 de junho a 25 de junho de 1978',
@@ -409,6 +424,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 1982,
+    mascot: 'Naranjito',
+    ball: 'Tango España',
     host: { name: 'Espanha', iso: 'es' },
     hostCities: ['Madri', 'Barcelona', 'Sevilha', 'Valência', 'Bilbao', 'Vigo', 'Málaga', 'Zaragoza', 'Alicante', 'Gijón', 'Oviedo', 'A Coruña', 'Elche', 'La Coruña', 'Valladolid'],
     dates: '13 de junho a 11 de julho de 1982',
@@ -443,6 +460,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 1986,
+    mascot: 'Pique',
+    ball: 'Azteca',
     host: { name: 'México', iso: 'mx' },
     hostCities: ['Cidade do México', 'Guadalajara', 'Monterrey', 'León', 'Puebla', 'Toluca', 'Querétaro', 'Irapuato', 'Nezahualcóyotl'],
     dates: '31 de maio a 29 de junho de 1986',
@@ -477,6 +496,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 1990,
+    mascot: 'Ciao',
+    ball: 'Etrusco Unico',
     host: { name: 'Itália', iso: 'it' },
     hostCities: ['Roma', 'Milão', 'Nápoles', 'Turim', 'Bari', 'Bolonha', 'Florença', 'Gênova', 'Palermo', 'Verona', 'Cagliari', 'Údine'],
     dates: '8 de junho a 8 de julho de 1990',
@@ -511,6 +532,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 1994,
+    mascot: 'Striker',
+    ball: 'Questra',
     host: { name: 'Estados Unidos', iso: 'us' },
     hostCities: ['Pasadena', 'Stanford', 'Foxborough', 'East Rutherford', 'Detroit', 'Chicago', 'Dallas', 'Orlando', 'Washington'],
     dates: '17 de junho a 17 de julho de 1994',
@@ -546,6 +569,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 1998,
+    mascot: 'Footix',
+    ball: 'Tricolore',
     host: { name: 'França', iso: 'fr' },
     hostCities: ['Paris (Saint-Denis)', 'Marselha', 'Lyon', 'Bordeaux', 'Nantes', 'Saint-Étienne', 'Toulouse', 'Lens', 'Montpellier', 'Nice'],
     dates: '10 de junho a 12 de julho de 1998',
@@ -580,6 +605,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 2002,
+    mascot: 'Ato, Kaz e Nik',
+    ball: 'Fevernova',
     host: { name: 'Coreia do Sul / Japão', iso: 'jp' },
     hostCities: ['Yokohama', 'Saitama', 'Osaka', 'Niigata', 'Kobe', 'Sapporo', 'Seoul', 'Daegu', 'Busan', 'Suwon', 'Daejeon', 'Jeonju', 'Gwangju', 'Ulsan'],
     dates: '31 de maio a 30 de junho de 2002',
@@ -615,6 +642,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 2006,
+    mascot: 'Goleo VI e Pille',
+    ball: 'Teamgeist',
     host: { name: 'Alemanha', iso: 'de' },
     hostCities: ['Berlim', 'Munique', 'Frankfurt', 'Dortmund', 'Hamburgo', 'Stuttgart', 'Hanôver', 'Gelsenkirchen', 'Kaiserslautern', 'Nuremberg', 'Colônia', 'Leipzig'],
     dates: '9 de junho a 9 de julho de 2006',
@@ -649,6 +678,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 2010,
+    mascot: 'Zakumi',
+    ball: 'Jabulani',
     host: { name: 'África do Sul', iso: 'za' },
     hostCities: ['Joanesburgo', 'Cidade do Cabo', 'Durban', 'Pretória', 'Port Elizabeth', 'Bloemfontein', 'Polokwane', 'Rustenburg', 'Nelspruit'],
     dates: '11 de junho a 11 de julho de 2010',
@@ -684,6 +715,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 2014,
+    mascot: 'Fuleco',
+    ball: 'Brazuca',
     host: { name: 'Brasil', iso: 'br' },
     hostCities: ['Rio de Janeiro', 'São Paulo', 'Brasília', 'Belo Horizonte', 'Salvador', 'Fortaleza', 'Recife', 'Porto Alegre', 'Curitiba', 'Cuiabá', 'Manaus', 'Natal'],
     dates: '12 de junho a 13 de julho de 2014',
@@ -720,6 +753,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 2018,
+    mascot: 'Zabivaka',
+    ball: 'Telstar 18',
     host: { name: 'Rússia', iso: 'ru' },
     hostCities: ['Moscou', 'São Petersburgo', 'Kazan', 'Sochi', 'Nizhny Novgorod', 'Rostov-on-Don', 'Samara', 'Volgogrado', 'Saransk', 'Kaliningrado', 'Ekaterinburgo'],
     dates: '14 de junho a 15 de julho de 2018',
@@ -756,6 +791,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 2022,
+    mascot: 'La\'eeb',
+    ball: 'Al Rihla',
     host: { name: 'Catar', iso: 'qa' },
     hostCities: ['Doha', 'Lusail', 'Al Khor', 'Al Wakrah', 'Al Rayyan'],
     dates: '20 de novembro a 18 de dezembro de 2022',
@@ -793,6 +830,8 @@ export const worldCups: WorldCup[] = [
 
   {
     year: 2026,
+    mascot: 'Maple, Zayu e Clutch',
+    ball: 'Trionda',
     host: { name: 'EUA · México · Canadá', iso: 'us' },
     hostCities: ['Nova York', 'Los Angeles', 'Cidade do México', 'Toronto', 'Vancouver', 'Atlanta', 'Dallas', 'Houston', 'Filadélfia', 'Boston', 'Kansas City', 'Miami', 'Seattle', 'Guadalajara', 'Monterrey', 'San Francisco'],
     dates: '11 de junho a 19 de julho de 2026',
