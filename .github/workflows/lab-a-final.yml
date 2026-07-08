@@ -574,6 +574,12 @@ jobs:
           cache: 'npm'
           cache-dependency-path: ${{ env.FRONTEND_WORKING_DIR }}/package-lock.json
 
+      - name: '[function] Azure login (Service Guima)'
+        if: ${{ inputs.acao == 'tudo' || inputs.acao == 'function' }}
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
       - name: '[frontend] Install dependencies (npm ci)'
         if: ${{ inputs.acao == 'tudo' || inputs.acao == 'frontend' }}
         working-directory: ${{ env.FRONTEND_WORKING_DIR }}
